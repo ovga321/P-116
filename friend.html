@@ -6,10 +6,9 @@
     <body>
         <h1>Relation : Friend</h1>
         <h2>Name : {{Ishani}}</h2>
-        <h2>Age : {{14}}</h2>
+        <h3>Age : {{14}}</h3>
 
         <!--Write the correct link for image source in place of #. The images are present in the 
             static folder. If you dont like those images you can use your own as well-->
-        <img src = "friend.jpg" alt = "Reference your friends image present in the static folder" width = "200"/>
-    </body>
+            <img src = "{{ url_for('static' , filename = 'friend.jpg') }}" alt = "friend.jpg" width = "200"/>
 </html>
